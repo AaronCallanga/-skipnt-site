@@ -1,0 +1,18 @@
+/* Skipnt legal pages: paper ground, ink type, one sticky for the header */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Kalam:wght@700&display=swap');
+:root { --ground: #F7F7F4; --ink: #1E1F24; --muted: #6B6C70; --line: #E1E0DA; --yellow: #FFD84D; --red: #E2462F; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 17px/1.6 'Bricolage Grotesque', system-ui, sans-serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+.mark { display: inline-block; background: var(--yellow); padding: .35rem 1rem .2rem; transform: rotate(-2deg); box-shadow: 0 8px 16px -8px #0006; border-radius: 3px; font: 700 1.6rem/1.2 Kalam, cursive; text-decoration: none; color: var(--ink); }
+.mark span { color: var(--red); }
+h1 { font-size: 2.2rem; line-height: 1.1; letter-spacing: -.02em; margin: 2rem 0 .25rem; }
+h2 { font-size: 1.25rem; margin: 2.5rem 0 .5rem; }
+.date { color: var(--muted); margin: 0 0 2rem; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: .6rem .5rem; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; }
+a { color: var(--ink); text-underline-offset: 3px; }
+nav { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.note { background: #fff; border: 2px dashed var(--line); border-radius: 8px; padding: .75rem 1rem; }
+::selection { background: var(--yellow); }
